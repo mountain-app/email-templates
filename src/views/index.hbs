@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Email templates</title>
+  </head>
+  <body>
+    <h1>Email templates</h1>
+    <ol>
+      {{#each links}}
+        <li>
+          <a href="/preview/{{this}}">
+            {{this}}
+          </a>
+        </li>
+      {{/each}}
+    </ol>
+  </body>
+</html>

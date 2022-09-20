@@ -1,0 +1,23 @@
+{
+  "name": "email-templates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf build && tsc",
+    "start": "node build/index.js",
+    "preview": "yarn build && node build/server.js"
+  },
+  "dependencies": {
+    "express": "4.18.1",
+    "handlebars": "4.7.7",
+    "mjml": "4.13.0",
+    "pino": "8.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.14",
+    "@types/mjml": "4.7.0",
+    "@types/node": "18.7.18",
+    "pino-pretty": "9.1.0",
+    "typescript": "4.8.3"
+  }
+}
