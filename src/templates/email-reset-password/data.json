@@ -1,3 +1,5 @@
 {
-  "name": "Niccolo"
+  "notificationType": "EMAIL_RESET_PASSWORD",
+  "name": "Niccolò",
+  "resetPasswordLink": "TODO"
 }

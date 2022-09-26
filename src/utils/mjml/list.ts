@@ -1,14 +1,14 @@
 import { readdir } from "fs/promises";
 
 const listMJMLs = async (): Promise<string[]> => {
-  const [templates, partials] = await Promise.all([
+  const [templates] = await Promise.all([
     readdir("./src/templates"),
-    readdir("./src/partials"),
+    // readdir("./src/partials"),
   ]);
 
   return [
     ...templates.map((template) => `templates/${template}`),
-    ...partials.map((partial) => `partials/${partial}`),
+    // ...partials.map((partial) => `partials/${partial}`),
   ];
 };
 

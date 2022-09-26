@@ -1,7 +1,13 @@
 <mjml>
+  <mj-head>
+    <mj-style inline="inline">
+      .rounded > table { border-collapse:separate; border-radius:8px;
+      padding-top: 32px; }
+    </mj-style>
+  </mj-head>
   <mj-body background-color="#fff">
     <mj-section>
-      <mj-column>
+      <mj-column border="1px solid #d1d5da" css-class="rounded">
         <mj-text> Ciao, {{name}} Ammazzati </mj-text>
       </mj-column>
     </mj-section>
